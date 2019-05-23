@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self';">
-  <title><%= current_page.data.title %></title>
+  <title>Chapeau de pige</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
@@ -35,10 +35,30 @@
   </script>
   <!-- End Google Analytics -->
 
-  <%= stylesheet_link_tag "/assets/stylesheets/global.css" %>
+  <link href="/assets/stylesheets/global.css" rel="stylesheet" />
 </head>
-<body class="<%= current_page.data.classes %>">
-  <%= yield %>
-  <%= javascript_include_tag '/assets/javascripts/global.js' %>
+<body class="">
+  <div class="container">
+  <main class="main-content">
+    <div class="row">
+      <div class="col-xs-12">
+        <img src="/assets/images/le-chapeau.png" alt="">
+      </div>
+    </div>
+
+    <div class="row push-t-xs-20">
+      <div class="col-xs-12">
+        <img src="/assets/images/logo.png" alt="Chapeau de pige!">
+      </div>
+    </div>
+
+     <div class="row push-t-xs-60">
+      <div class="col-xs-12">
+        <p class="size-xs-30"><span lang="en">Sooner or later... we will</span> pige <span lang="en">again</span>!</p>
+      </div>
+    </div>
+  </main>
+</div>
+  <script src="/assets/javascripts/global.js"></script>
 </body>
 </html>

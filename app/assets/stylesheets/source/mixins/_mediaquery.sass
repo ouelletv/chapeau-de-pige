@@ -14,8 +14,16 @@
   @media screen and (min-width: $tabletBreakpoint)
     @content
 
+@mixin tabletlargeup
+  @media screen and (min-width: $tabletLargeBreakpoint)
+    @content
+
 @mixin desktopup
   @media screen and (min-width: $desktopBreakpoint)
+    @content
+
+@mixin desktoplargeup
+  @media screen and (min-width: $desktopLargeBreakpoint)
     @content
 
 @mixin customDown($value)

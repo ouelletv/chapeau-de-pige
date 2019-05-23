@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self';">
-  <title><%= current_page.data.title %></title>
+  <title></title>
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
@@ -35,10 +35,10 @@
   </script>
   <!-- End Google Analytics -->
 
-  <%= stylesheet_link_tag "/assets/stylesheets/global.css" %>
+  <link href="/assets/stylesheets/global.css" rel="stylesheet" />
 </head>
-<body class="<%= current_page.data.classes %>">
-  <%= yield %>
-  <%= javascript_include_tag '/assets/javascripts/global.js' %>
+<body class="">
+  Template 404
+  <script src="/assets/javascripts/global.js"></script>
 </body>
 </html>
