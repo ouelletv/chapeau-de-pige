@@ -1,0 +1,19 @@
+<!doctype html>
+<!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="fr"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+
+  <!-- Only allow content from our website -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self';">
+
+  <title><%= current_page.data.title || "Middleman" %></title>
+
+  <%= stylesheet_link_tag "/assets/stylesheets/global.css" %>
+</head>
+<body class="<%= current_page.data.classes %>">
+  <%= yield %>
+  <%= javascript_include_tag '/assets/javascripts/global.js' %>
+</body>
+</html>

@@ -1,0 +1,23 @@
+@mixin mobile
+  @media screen and (max-width: ($tabletBreakpoint - 1))
+    @content
+
+@mixin tablet
+  @media screen and (min-width: $tabletBreakpoint) and (max-width: ($desktopBreakpoint - 1))
+    @content
+
+@mixin tabletdown
+  @media screen and (max-width: ($desktopBreakpoint - 1))
+    @content
+
+@mixin tabletup
+  @media screen and (min-width: $tabletBreakpoint)
+    @content
+
+@mixin desktopup
+  @media screen and (min-width: $desktopBreakpoint)
+    @content
+
+@mixin customDown($value)
+  @media screen and (max-width: ($value - 1))
+    @content
