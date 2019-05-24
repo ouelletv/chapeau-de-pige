@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "01b0771368354a8165f4e4f3cb488ef5",
-    "url": "/fonts/Lavanderia.01b07713.woff"
+    "revision": "e5f23566d22723e64f7651da3600907b",
+    "url": "/fonts/QuicksandBookOblique.e5f23566.ttf"
   },
   {
     "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
     "url": "/robots.txt"
   },
   {
-    "revision": "e5f23566d22723e64f7651da3600907b",
-    "url": "/fonts/QuicksandBookOblique.e5f23566.ttf"
+    "revision": "01b0771368354a8165f4e4f3cb488ef5",
+    "url": "/fonts/Lavanderia.01b07713.woff"
   },
   {
     "revision": "31206ed120f58a59a9d3",
@@ -20,28 +20,28 @@ self.__precacheManifest = [
     "url": "/fonts/Lavanderia.10012704.ttf"
   },
   {
-    "revision": "5f20b4566ab20c097a6eccbb5a49eb34",
-    "url": "/fonts/QuicksandBookOblique.5f20b456.woff2"
+    "revision": "b06e7ea68b43ad24f6dc6821af5107c3",
+    "url": "/fonts/QuicksandBook.b06e7ea6.woff2"
   },
   {
     "revision": "e77bf3e652fa3910149deba90fddc752",
     "url": "/fonts/QuicksandBookOblique.e77bf3e6.woff"
   },
   {
-    "revision": "630e79dc481022c5dbd9e2c442ca265b",
+    "revision": "37c31c67b98a96ec83c095ff2746e9e2",
     "url": "/index.html"
   },
   {
-    "revision": "9e23949f9806ac0fbe33",
-    "url": "/js/app.db166a9e.js"
+    "revision": "3021ddeda8e533d1a2b2",
+    "url": "/js/app.3b8d1131.js"
+  },
+  {
+    "revision": "5f20b4566ab20c097a6eccbb5a49eb34",
+    "url": "/fonts/QuicksandBookOblique.5f20b456.woff2"
   },
   {
     "revision": "4c92ba3ce8b529804a8f64d0b4414383",
     "url": "/img/le-chapeau.4c92ba3c.png"
-  },
-  {
-    "revision": "fc95ed95995a0b88d86d854efb799d4a",
-    "url": "/img/poster.fc95ed95.jpg"
   },
   {
     "revision": "9273803d78b69fb23f211dc39885c873",
@@ -52,8 +52,8 @@ self.__precacheManifest = [
     "url": "/img/logo.930b8bb9.png"
   },
   {
-    "revision": "b06e7ea68b43ad24f6dc6821af5107c3",
-    "url": "/fonts/QuicksandBook.b06e7ea6.woff2"
+    "revision": "fc95ed95995a0b88d86d854efb799d4a",
+    "url": "/img/poster.fc95ed95.jpg"
   },
   {
     "revision": "10d523d476421f2ea7c667dabf4c3946",
@@ -64,7 +64,7 @@ self.__precacheManifest = [
     "url": "/fonts/Lavanderia.4802d5d2.woff2"
   },
   {
-    "revision": "9e23949f9806ac0fbe33",
-    "url": "/css/app.b70ce3b3.css"
+    "revision": "3021ddeda8e533d1a2b2",
+    "url": "/css/app.e97df5e5.css"
   }
 ];
