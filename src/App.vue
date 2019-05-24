@@ -14,9 +14,21 @@
 <script>
 
   import "@/assets/css/global.sass"
+  import ogImage from '@/assets/images/poster.jpg'
 
   export default {
-
+    metaInfo: {
+      title: "Pige!",
+      titleTemplate: '%s | Chapeau de pige',
+      meta: [
+        { property: 'og:image', content: ogImage },
+        { property: 'og:image:width', content: '1200' },
+        { property: 'og:image:height', content: '630' },
+        { property: 'og:image:title', content: 'Chapeau de pige' },
+        { property: 'og:description', content: "Dont bother making your own decision... let the chapeau decide!" },
+        { property: 'description', content: "Dont bother making your own decision... let the chapeau decide!" }
+      ]
+    },
   }
 
 </script>

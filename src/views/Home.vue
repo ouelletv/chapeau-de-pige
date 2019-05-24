@@ -12,9 +12,7 @@
       </div>
     </div>
 
-    <div v-if="choices.length > 0">
-      <span v-for="choice in choices" :key="choice" v-html="choice"></span>
-    </div>
+    <choices />
 
     <form @submit.prevent="addChoice">
       <div class="row push-t-xs-60">
@@ -45,22 +43,12 @@
 
 <script>
 
-import { mapState } from 'vuex'
-import ogImage from "@/assets/images/poster.jpg"
+import choices from '@/components/choices.vue'
 
 export default {
-  metaInfo: {
-    title: "Chapeau de pige - Pige!",
-    description: "Dont bother making your own decision... let the chapeau decide!",
-    meta: [
-      { property: 'og:image', content: ogImage }
-    ]
-  },
+  components: { choices },
   data () {
     return { choice: '' }
-  },
-  computed: {
-    ...mapState(['choices']),
   },
   methods: {
     addChoice () {
