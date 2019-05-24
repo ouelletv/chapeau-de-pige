@@ -48,6 +48,10 @@
 import { mapState } from 'vuex'
 
 export default {
+  metaInfo: {
+    title: "Chapeau de pige - Pige!",
+    description: "Dont bother making your own decision... let the chapeau decide!"
+  },
   data () {
     return { choice: '' }
   },
