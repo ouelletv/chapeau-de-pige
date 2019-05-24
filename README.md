@@ -1,33 +1,29 @@
-# Project name
+# chapeau-de-pige
 
----
+## Project setup
+```
+npm install
+```
 
-## Install the project
-`bundle install`
-`npm install`
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
-## Run the development server
-```bundle exec middleman```
+### Compiles and minifies for production
+```
+npm run build
+```
 
-## Build the dist folder
-```bundle exec middleman build```
+### Run your tests
+```
+npm run test
+```
 
-## Project command
+### Lints and fixes files
+```
+npm run lint
+```
 
-### Watch and compile assets
-```npm start```
-
-### Process SVG files
-```npm run svg```
-
-### Put all files you need to copy in dist in files_to_copy_in_dist folder (ex: .htaccess)
-
-## Team
-
-### Project Manager
-
-### Design
-
-### Development
-
-
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
