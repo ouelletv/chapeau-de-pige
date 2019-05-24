@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.d4f15184dba763b2128ce16d6d4d214a.js"
+  "/precache-manifest.6827c9a0576ca45eb55d81cc6d9e83db.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "chapeau-de-pige"});

@@ -46,11 +46,15 @@
 <script>
 
 import { mapState } from 'vuex'
+import ogImage from "@/assets/images/poster.jpg"
 
 export default {
   metaInfo: {
     title: "Chapeau de pige - Pige!",
-    description: "Dont bother making your own decision... let the chapeau decide!"
+    description: "Dont bother making your own decision... let the chapeau decide!",
+    meta: [
+      { property: 'og:image', content: ogImage }
+    ]
   },
   data () {
     return { choice: '' }
