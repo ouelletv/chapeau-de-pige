@@ -6,7 +6,8 @@
   <title><%= current_page.data.title %></title>
   <meta name="description" content="Dont bother making your own decision... let the chapeau decide!">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self';">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' www.google-analytics.com; img-src 'self' www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;"">
+
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
@@ -39,6 +40,7 @@
   <%= stylesheet_link_tag "/assets/stylesheets/global.css" %>
 </head>
 <body class="<%= current_page.data.classes %>">
+  <%= partial "partials/svg" %>
   <%= yield %>
   <%= javascript_include_tag '/assets/javascripts/global.js' %>
 </body>

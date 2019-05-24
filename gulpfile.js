@@ -27,7 +27,7 @@ gulp.task('styles', function() {
 
 gulp.task('svgstore', function(){
   return gulp
-      .src('./app/assets/images/icons/*.svg')
+      .src('./app/assets/images/svg-store/*.svg')
       .pipe(svgmin(function (file) {
           var prefix = path.basename(file.relative, path.extname(file.relative));
           return {
@@ -40,6 +40,10 @@ gulp.task('svgstore', function(){
           }
       }))
       .pipe(svgstore({ inlineSvg: true }))
+      .pipe(rename(function (path) {
+        path.dirname += "/";
+        path.basename = "svg-sprite"
+      }))
       .pipe(gulp.dest('./app/assets/images'));
 });
 

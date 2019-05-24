@@ -1,0 +1,82 @@
+%base-input-style
+  background-color: #f9f8f8
+  border-radius: 40px
+  border: none
+  box-shadow: inset 0px 0px 5px -1px rgba(0,0,0,.5), inset 0px 1px 1px 1px rgba(0,0,0,.25)
+  color: $primary-text-color
+  font: 500 24px/16px $primary-font
+  height: 68px
+  letter-spacing: 0.6px
+  outline: none
+  padding: 15px 45px
+
+.form__fieldset
+  position: relative
+
+.form__control
+  align-items: flex-end
+  display: flex
+  flex-flow: row wrap
+  justify-content: flex-start
+  position: relative
+  width: 100%
+
+  &.form__control--text-button input + button
+
+    &:after
+      content: ""
+      height: 0px
+      transition: all 250ms ease
+      width: 0px
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translateY(-50%)
+      z-index: 1
+
+  &.form__control--text-button input:placeholder-shown + button
+    &:after
+      box-shadow: 0 0 0 0 transparent
+  &.form__control--text-button input:placeholder-shown + button svg
+    fill: $primary-text-color
+
+  &.form__control--text-button input:not(:placeholder-shown) + button
+    &:after
+      box-shadow: 0 0 15px 10px #00c8cf
+      opacity: 0.25
+  &.form__control--text-button input:not(:placeholder-shown) + button svg
+    fill: #00c8cf
+
+.form__field
+  height: 100%
+  width: 100%
+
+.form__element
+  height: 100%
+  width: 100%
+
+  @at-root .form__control--text-button input#{&}
+    @extend %base-input-style
+
+  @at-root .form__control--text-button button#{&}
+    align-items: center
+    appearance: none
+    background-color: transparent
+    border: none
+    cursor: pointer
+    display: flex
+    flex-flow: row wrap
+    height: 50px
+    justify-content: center
+    padding: 0
+    position: absolute
+    right: 25px
+    top: 50%
+    transform: translateY(-50%)
+    width: 50px
+    z-index: 5
+
+.form__element__icon
+  transition: all 200ms ease
+  position: relative
+  z-index: 5
